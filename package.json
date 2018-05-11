@@ -1,0 +1,18 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "buffer": "^5.1.0",
+    "expo": "^25.0.0",
+    "intrinio-client": "0.0.5",
+    "js-base64": "^2.4.3",
+    "react": "16.2.0",
+    "react-file-base64": "^1.0.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "2.0.0-beta.5",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  }
+}
