@@ -1,8 +1,8 @@
 {
-  "expoServerPort": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "packagerPort": null,
-  "packagerPid": null
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://7y-49p.brld.finalproject.exp.direct",
+  "packagerNgrokUrl": "https://packager.7y-49p.brld.finalproject.exp.direct",
+  "ngrokPid": 11860,
+  "packagerPort": 19001,
+  "packagerPid": 19980
 }

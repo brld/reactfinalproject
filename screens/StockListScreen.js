@@ -12,7 +12,7 @@ export default class StockListScreen extends React.Component {
     super();
     this.customKey = 0;
     this.state = {
-      stocks: ["AAPL", "GOOG", "FB", "TWTR", "TSLA", "MSFT", "CSCO", "INTC", "AMZN", "NFLX", "CRM", "GPRO"], stockData: [], stockPrices: [], totalStock: []
+      stocks: ["AAPL", "GOOG", "FB", "TWTR", "TSLA", "MSFT", "CSCO", "INTC", "AMZN", "NFLX", "CRM", "GPRO"], stockData: [],
     };
     this.getStocks()
   }
@@ -29,19 +29,12 @@ export default class StockListScreen extends React.Component {
     const results = await fetchStockData(this.state.stocks)
     const resultsMapped = results.map(this.addKey)
     this.setState({stockData: resultsMapped})
-
-    // const resultsNew = await fetchLastPrice(this.state.stocks)
-    // const resultsMappedNew = resultsNew.map(this.addKey)
-    // this.setState({stockPrices: resultsMappedNew})
-
-    // this.setState({ totalStock: [...this.state.totalStock, ...this.state.stockData] })
-    // this.setState({ totalStock: [...this.state.totalStock, ...this.state.stockPrices] })
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <StocksList stocks={this.state.stockData} prices={this.state.stockPrices} navigation={this.props.navigation} />
+        <StocksList stocks={this.state.stockData} navigation={this.props.navigation} />
       </View>
     );
   }
